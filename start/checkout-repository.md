@@ -24,7 +24,7 @@ $ ls
  Music/               Pictures/                                                                                      ntuser.ini
 ```
 
-Each entry you see in the output is a file or directory that is in the current directory, `ls` will also show a lot of files that windows normally hides from you, so if you navigated via the windows `File Explorder` GUI (graphical user interface) you probably won't see a lot of these files normally without forcing Windows by using "Show hidden files or folders" option.
+Each entry you see in the output is a file or directory that is in the current directory, `ls` will also show a lot of files that windows normally hides from you, so if you navigated via the windows `File Explorer` GUI (graphical user interface) you probably won't see a lot of these files normally without forcing Windows by using "Show hidden files or folders" option.
 
 1. Type `pwd` and hit enter, this command is the present working directory and will give you the current path that the terminal is working in. It should display something like:
 
@@ -40,11 +40,11 @@ $ pwd
 
 In the terminal `~` is shorthand for the home directory. As you can see the terminal prompt is : `joshr@GoobToob MINGW64 ~` this is the user, me, @ GoobToob, my computer name, using MINGW64 "windows prompt" and the terminal is currently in the `~` home directory. `~` in this case is equivalent to `/c/Users/joshr`.
 
-6. Create a new directory called `repos`, repos is short for `repositories`, I generally like the shorthand so its a little less to type. To creates this run `mkdir repos`.  `mkdir` is another command which stands for "make directory" and the name after it is the name of the directory we want to create.
+6. Create a new directory called `repos`, repos is short for `repositories`, I generally like the shorthand so its a little less to type. To create this run `mkdir repos`.  `mkdir` is another command which stands for "make directory" and the name after it is the name of the directory we want to create.
 7. Execute the `ls` command again and you should now see the `repos` directory has been created.
 8. Lets move into the newly created repos directory. To do this execute the `cd repos` command. `cd` is the "change directory" command and it tells the terminal to move the working directory into the named directory.
     * `.` (dot) is a special directory for the "current" directory.  If you run `cd .` it "moves" you into the same directory you are currently in, doesn't do much here but its worth noting what the special `.` file means.
-    * `..` (dot dot) is also a special directory and it stands for the parent directory that you are currently in. The parent directory of `repos` is your home directory, so by typing `mv ..` it will move you back up to the `~` directory. This is important since it lets you move up and down the directory hierarchy.
+    * `..` (dot dot) is also a special directory and it stands for the parent directory that you are currently in. The parent directory of `repos` is your home directory, so by typing `cd ..` it will move you back up to the `~` directory. This is important since it lets you move up and down the directory hierarchy.
     * `-` is a special `cd` argument which means "move to the last directory I was in. So issuing `cd -` will change your working directory to the last directory you were in. If you issue this twice in a row it will keep changing the directory from the two last directories you were in, try it now and it should keep flipping you between your home directory and the repos directory.
     * After trying all of these lets make sure we are in the newly created `repos` directory, use the newly learned commands to get there and show that you are in that directory.
 9. Clone the git repository. To do this we want to run `git clone <url>` where `<url>` is the URL we copied from step (3). This will issue a `clone` command to `git` and fetch the remote repository locally.
