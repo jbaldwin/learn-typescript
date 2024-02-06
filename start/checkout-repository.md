@@ -2,11 +2,11 @@
 
 Git repositories are a way to track changes to the codebase, this is useful in case bugs are introduced you can look back at all the changes that were committed to the repository. Think of when you hit "save' in a Word document, except that each time you hit save you get a new "copy" of the document and can look back through each time you hit save to see the differences.
 
-1. Navigate to https://github.com/jbaldwin/learn-typescript
-2. Click on the green "Code" button, this will give a dropdown on how to `clone` the repository locally to your computer.
-3. Under `Local` chose `HTTPS` and then copy the url, it should look like: https://github.com/jbaldwin/learn-typescript.git
-4. Open your `Git Bash` locally on your computer.
-5. Type `ls` and then enter to list the current contents of the current directory you are in. `ls` is a linux command available in `Git Bash` that lists the contents of the current directory. You should be in your "Home Directory".  It shoudl display something similar to:
+1. Create a github.com account, this will be useful if you want to host or create code for yourself later. You can click the Sign-Up on the top right hand corner when navigating to github.com.
+
+2. Navigate to https://github.com/jbaldwin/learn-typescript
+3. Open your `Git Bash` locally on your computer.
+4. Type `ls` and then enter to list the current contents of the current directory you are in. `ls` is a linux command available in `Git Bash` that lists the contents of the current directory. You should be in your "Home Directory".  It should display something similar to:
 
 ```bash
 joshr@GoobToob MINGW64 ~
@@ -26,7 +26,7 @@ $ ls
 
 Each entry you see in the output is a file or directory that is in the current directory, `ls` will also show a lot of files that windows normally hides from you, so if you navigated via the windows `File Explorer` GUI (graphical user interface) you probably won't see a lot of these files normally without forcing Windows by using "Show hidden files or folders" option.
 
-1. Type `pwd` and hit enter, this command is the present working directory and will give you the current path that the terminal is working in. It should display something like:
+5. Type `pwd` and hit enter, this command is the present working directory and will give you the current path that the terminal is working in. It should display something like:
 
 ```bash
 joshr@GoobToob MINGW64 ~
@@ -48,6 +48,7 @@ In the terminal `~` is shorthand for the home directory. As you can see the term
     * `-` is a special `cd` argument which means "move to the last directory I was in. So issuing `cd -` will change your working directory to the last directory you were in. If you issue this twice in a row it will keep changing the directory from the two last directories you were in, try it now and it should keep flipping you between your home directory and the repos directory.
     * After trying all of these lets make sure we are in the newly created `repos` directory, use the newly learned commands to get there and show that you are in that directory.
 9. Clone the git repository. To do this we want to run `git clone <url>` where `<url>` is the URL we copied from step (3). This will issue a `clone` command to `git` and fetch the remote repository locally.
+    * NOTE: it is standard anytime a commands arguments that have a parameter surrounded by `<` and `>` that you need to replace that argument _including_ the angled `<>` brackets. So `<ur>` here would become the following line:
     * `git clone https://github.com/jbaldwin/learn-typescript.git`
     * Execute `ls` and you should see it created a new directory `learn-typescript`, lets `cd` into that directory and then you should be able to `ls` all the files that are in the repo locally.
 10. Open VS Code and then File -> Open Folder the `/c/Users/<user>/repos/learn-typescript` directory so we can start coding.
