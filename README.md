@@ -10,4 +10,3 @@ Follow these getting started pages first to setup your environment with the requ
 ## Lessons
 
 * [Lesson 001](lessons/lesson-001/hello-world.md) Hello World
-
