@@ -10,3 +10,4 @@ Follow these getting started pages first to setup your environment with the requ
 ## Lessons
 
 * [Lesson 001](lessons/lesson-001/hello-world.md) Hello World
+* [Lesson 002](lessons/lesson-002/primitive-types.md) Primitive Types

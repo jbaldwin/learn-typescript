@@ -4,7 +4,7 @@ In this lesson we will write a classic "Hello World" program in TypeScript. This
 
 NOTE: Previsouly we were executing the commands we typed into the terminal when we pressed 'enter'. Editing code in Visual Studio Code is more like using Microsoft Word or Google Docs, the code is being edited and not _executed_ yet.
 
-1. Open the project in VS Code `File -> Open Folder` then choose the `learn-typescript` project
+1. Open the project in VS Code `File -> Open Folder` then choose the `learn-typescript` project.
 2. On the lefthand side of VS Code there should be 5 icons, papers, magnifying glass, a weird branchy thing, a bug and a play button, and then building blocks. (If you hover over them they will tell you what they do including keyboard shortcuts!). Click on the papers to open the "Explorer", (it might already be open if it is selected.). This opens an explorer which shows all the files and directories in the opened project.
 3. In the explorer you can find this lesson's file by opening `lessons/lesson-001/hello-world.md`. `.md` stands for Markdown, and its a file format that allows you to write in plain text but have it be rendered in the browser easily without writing HTML.
     * If you click the building blocks on the left you can install "Markdown All in One" extension and have it render the markdown inside of VS Code just like you see it in Github, talk to jbaldwin if you wish to try this for more detailed instructions.
